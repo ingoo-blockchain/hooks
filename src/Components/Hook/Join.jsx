@@ -18,7 +18,10 @@ const Join = () => {
 
     },validate)
 
-
+    const a ={
+        value: '',
+        onChange:onChange
+    }
 
     return (
         <form onSubmit={handleSubmit}>

@@ -6,13 +6,18 @@ import Props from './Components/props/Props.jsx'
 import Logins from './Components/Logins/Logins.jsx'
 import Login_hook from './Components/Logins/Login_hook';
 import Form from './Components/Form/Form.jsx'
-
+import Timeout from './Components/Effect/Timeout';
+// import Reduce from './Components/reducer/Reduce'
+// import Context from './Components/Context/Context'
+import Comment from './Components/Comment/Comment'
 
 const App = () => {
   return (
     <div>
       <h1>Form Component</h1>
       <Form />
+      
+      <Comment />
     </div>
   );
 }

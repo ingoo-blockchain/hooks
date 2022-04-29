@@ -27,7 +27,8 @@ const validate = ({userid,password}) => {
 
     if(!userid){
         errors.userid = "이메일이 입력되지 않았습니다."
-    } else if( !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(userid) ){
+    } else if( !/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i.test(userid) ){
+        // 
         errors.userid = "입력된 이메일이 유효하지 않습니다."
     }
 
@@ -42,7 +43,6 @@ const validate = ({userid,password}) => {
 
 // 폼만들때, 
 // 폼체크 
-
 
 const Form = () => {
     const id = useInput('')
