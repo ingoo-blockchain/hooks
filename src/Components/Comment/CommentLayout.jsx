@@ -1,9 +1,12 @@
 import React from 'react'
+import CommentForm from './CommentForm'
+import CommnetList from './CommentList'
 
 const CommnetLayout = () => {
     return (
         <>
-            Hello world!
+            <CommentForm />
+            <CommnetList />
         </>
     )
 }

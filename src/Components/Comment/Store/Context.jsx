@@ -1,7 +1,7 @@
-import { createContext } from "react";
+import { createContext,useContext } from "react";
 
 export const initialState = {
-    commnetItem:[], 
+    commentItem:[], 
     loadding:false, 
     erros:null
 }
@@ -10,6 +10,10 @@ const Store = createContext()
 
 // ES6 모듈 
 export default Store
+
+
+
+
 
 
 
